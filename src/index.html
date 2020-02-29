@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #button-bar {
+            height: 30px;
+            display: flex;
+        }
+
+        #player-turn {
+            flex-grow: 2;
+        }
+
+        #canvas-div {
+            position: absolute;
+            top: 30px;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="button-bar">
+        <button type="button" id="resetButton">Reset Game</button>
+        <label id="player-turn">Your Turn!</label>
+        <input type="radio" id="x" name="xoteam" value="X" checked="checked">
+        <label for="x">X</label>
+        <input type="radio" id="o" name="xoteam" value="O">
+        <label for="o">O</label>
+    </div>
+    <div id="canvas-div"></div>
+</body>
+
+</html>
